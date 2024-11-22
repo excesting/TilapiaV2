@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS PasswordReset (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    email TEXT NOT NULL,
+    code TEXT NOT NULL,
+    expires_at DATETIME NOT NULL
+);
